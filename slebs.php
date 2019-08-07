@@ -50,7 +50,6 @@ $slebs_list = get_all_slebs_list();
 <body>
     <div id="includedContent"></div>
     <section class="w3-container">
-        <h2>Clebrities</h2>
         <table>
             <tr>
                 <td>Id</td>

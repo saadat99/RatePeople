@@ -6,7 +6,7 @@ Make sure the file is not beign tracked by git
 */
 
 // Database connect info
-define('DataBaseHostName','');
-define('DataBaseUserName','');
+define('DataBaseHostName','localhost');
+define('DataBaseUserName','root');
 define('DataBasePassWord','');
-define('DataBaseName','');
+define('DataBaseName','slebvote');

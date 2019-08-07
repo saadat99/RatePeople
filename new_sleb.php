@@ -51,12 +51,11 @@ if(isset($_POST['submit'])){
             $("#includedContent").load("nav.php"); 
         });
     </script>
-    <title>Celebrities</title>
+    <title>New person</title>
 </head>
 <body>
     <div id="includedContent"></div>
     <section class="w3-container">
-        <h2>Clebrities</h2>
         <form method="post" class="slebForm">
             Name: <input type="text" name="name" >
             <input type="submit" name="submit">

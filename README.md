@@ -1,15 +1,14 @@
-# SlebVote
+# Rate People
 
-SlebVote is a website where you can rate celebrities.
+A web app where you can rate people who have a page on Wikipedia
 
-# Prerequisites
-* PHP 7.2 <br/>
-* Mysql Server 8.x without "caching_sha2_password"
+# Requirements
+PHP 7 <br/>
+MySQL Server <br>
 
-# Installation 
-
-* Set your MySQL database credentials in `config_example.php` and rename it to `config.php`
-* Import `Dump.sql` file into your mysql server. Schema name should be `slebvote`
-* `php -S localhost:8000` to run php's built-in web server
-
-Then visit http://localhost:8000
+# Usage 
+Create the `config.php` file using `config_example.php` and set your database credentials
+<br>
+Make a new database named `slebvote` with `utf8mb4_general_ci` collation and import `Dump.sql`
+<br>
+`php -S localhost:8000` to run php's built-in web server, then visit http://localhost:8000

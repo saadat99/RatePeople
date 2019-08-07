@@ -108,22 +108,22 @@ if(isset($username) && isset($email) && isset($password) && isset($rpassword)) {
       
       <form class="w3-container" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <p>
-        <span class="error"><?php echo $usernameErr;?></span>
-        <input class="w3-input" type="text" name="uname" value="<?php echo $username;?>">
+        <span class="error"><?php if(isset($usernameErr)) echo $usernameErr;?></span>
+        <input class="w3-input" type="text" name="uname" value="<?php if(isset($username)) echo $username;?>">
         <label>Username</label></p>
 
         <p>
-        <span class="error"><?php echo $emailErr;?></span>
-        <input class="w3-input" type="text" name="email" value="<?php echo $email;?>">
+        <span class="error"><?php if(isset($emailErr)) echo $emailErr;?></span>
+        <input class="w3-input" type="text" name="email" value="<?php if(isset($email)) echo $email;?>">
         <label>Email</label></p>
 
         <p>
-        <span class="error"><?php echo $passwordErr;?></span>
+        <span class="error"><?php if(isset($passwordErr)) echo $passwordErr;?></span>
         <input class="w3-input" type="password" name="psw">
         <label>Password</label></p>
 
         <p>
-        <span class="error"><?php echo $rpasswordErr;?></span>
+        <span class="error"><?php if(isset($rpasswordErr)) echo $rpasswordErr;?></span>
         <input class="w3-input" type="password" name="rpsw">
         <label>Repeat Password</label></p>
 

@@ -87,12 +87,12 @@ if(isset($username) && isset($password)) {
 
       <form class="w3-container" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <p>
-        <span class="error"><?php echo $usernameErr;?></span>
+        <span class="error"><?php if(isset($usernameErr)) echo $usernameErr; ?></span>
         <input class="w3-input" type="text" name="uname">
         <label>Username</label></p>
         <p>
-        <span class="error"><?php echo $passwordErr;?></span>
-        <input class="w3-input" type="password" name="psw" value="<?php echo $username;?>">
+        <span class="error"><?php if(isset($passwordErr)) echo $passwordErr;?></span>
+        <input class="w3-input" type="password" name="psw" value="<?php if(isset($username)) echo $username;?>">
         <label>Password</label></p>
         <input class="w3-btn w3-blue" type="submit" ><br><br>
       </form>
