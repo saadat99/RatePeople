@@ -1,3 +1,5 @@
+!! notice !! Skiped development
+
 # Rate People
 
 A web app where you can rate people who have a page on Wikipedia
